@@ -11,6 +11,7 @@ console.log('Animals are: ', animalArray);
 //    a message, similar to the example above.
 let favoriteFoods = ['pasta', 'ugali', 'chapati', 'rice'];
 console.log('Favorite foods are: ', favoriteFoods);
+
 // Array.length: A property that tells you how many items are in a given array.
 console.log('--- 2. Length of an array ---');
 
@@ -22,8 +23,9 @@ console.log('Number of animals:', numberOfAnimals);
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 
-let numberOfFoods = favoriteFoods.length;
-console.log('Number of foods:',numberOfFoods);
+let numberOfFoods = favoriteFoods.length; 
+console.log('Number of favorite foods:', numberOfFoods); 
+
 
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -36,8 +38,9 @@ console.log('First animal is', firstAnimal);
 //      of the second item from the `animalArray`.
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
-let secondAnimal =animalArray [1];
+let secondAnimal = animalArray[1];
 console.log('Second animal is', secondAnimal);
+
 
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
@@ -47,12 +50,12 @@ console.log('Second animal is', secondAnimal);
 let lastAnimal = animalArray[animalArray.length - 1];
 console.log('Animal array:', animalArray);
 console.log('Last animal:', lastAnimal);
+
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
+let lastAnimalRefactored = animalArray[animalArray.length - 1];
+console.log('Last Animal refactored is', lastAnimalRefactored);
 
-let LastIndex = animalArray.length-1;
-let lastAnimalRefactored = animalArray[LastIndex];
-console.log('last Animal refactored is',lastAnimalRefactored);
 // Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
 
@@ -67,7 +70,7 @@ console.log('Added an animal to end,', animalArray);
 //      array. (How can you be 100% certain this worked? 🤔)
 let dessert = 'samosa';
 favoriteFoods.push(dessert);
-console.log('added dessert to end,', favoriteFoods);
+console.log('added dessert to end:', favoriteFoods);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
@@ -95,9 +98,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      Don't forget! Use console.log to verify that the `colors`
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)let colors = ['orange', 'yellow', 'green', 'teal'];
-lastColor = colors.pop();
-console.log('last color removed:', lastColor);
-console.log('The colors are now', colors);
+let lastColor = colors.pop();
+console.log('Last color removed:', lastColor); 
+console.log('The colors are now:', colors); 
 
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
@@ -107,10 +110,9 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
-firstColor = colors.shift();
-console.log('Removed the first color',firstColor);
-console.log('The colors are now', colors);
-
+let firstColor = colors.shift();
+console.log('First color removed:', firstColor);
+console.log('The colors are now:', colors); 
 
 
 // STRETCH GOALS:
@@ -128,7 +130,6 @@ console.log(gems);
 gems.sort().reverse();
 console.log(gems);
 
-
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
 //     word "and".
@@ -136,9 +137,8 @@ console.log(gems);
 //       "Emerald and Diamond and Tourmaline and Topaz"
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
-let gemString = gems.join('and')
+let gemString = gems.join(' and '); 
 console.log(gemString);
-
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
 //     It should look something like:
